@@ -1,0 +1,20 @@
+<div class="container mt-5 w-50 d-column">
+    <h1 class="text-center p-">Login</h1>
+    <form action="/api/login" method="post" class="d-flex justify-content-center ">
+        <ul>
+            <li class="mb-2">
+                <input type="text" name="email" placeholder="Email" required>
+            </li>
+            <li class="mb-2">
+                <input type="password" name="password" placeholder="Password" required>
+            </li>
+            <li class="text-center">
+                <input type="submit" value="Enter">
+            </li>
+        </ul>
+    </form>
+   <a href="/api/register" class="mb-4 btn btn-success text-white">Register</a>
+    <a class="mb-4 btn btn-primary" href="/api/auth/github">Login with GitHub</a>
+</div>
+    
+<script src="/js/index.js"></script>
