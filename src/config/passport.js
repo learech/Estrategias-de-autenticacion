@@ -61,7 +61,7 @@ const initializePassport = () => {
             {
                 clientID: process.env.CLIENT_ID,
                 clientSecret: process.env.CLIENT_SECRET,
-                callbackURL: 'http://localhost:8080/api/auth/github/callback'
+                callbackURL: 'http://localhost:8080/auth/github/callback'
 
             }, async function (accessToken, refreshToken, profile, done) {
                 let firstAndLastName = profile._json.name.split(" ");
